@@ -1,0 +1,72 @@
+.container {
+  position: absolute;
+  margin-top: 700px;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container #icon {
+  border: none;
+  border-radius: 10px;
+  font-size: 50px;
+  width: 120px;
+}
+
+.container button {
+  border: none;
+  border-radius: 10px;
+  font-size: 50px;
+  width: auto;
+  background: white;
+}
+
+.overlay {
+  opacity: 0.5;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 375px;
+  height: 812px;
+  background: black;
+}
+
+.share,
+.overlay {
+  display: none;
+}
+
+.show-share {
+  display: block;
+}
+
+.share {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 18%;
+  margin: auto;
+  width: 250px;
+  height: 420px;
+  z-index: 1;
+  padding: 1em;
+  background: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.share h2 {
+  margin: 0;
+}
+
+.share button {
+  font-size: 50px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 24px;
+  border: none;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=share_style.css.map */
