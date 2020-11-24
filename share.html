@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share</title>
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/share_css/share_style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="icon">
+        <a href="/detector/detector.html">
+        <i class='bx bxs-chevron-left'></i>
+        </a>
+        </div>
+
+        <div id="icon">
+        <button><i class='bx bxs-share-alt' ></i></button>
+        </div>
+
+        <div id="icon">
+        <a href="">
+        <i class='bx bx-log-out' ></i>
+        </a>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="share">
+        <h2>Share with...</h2>
+        <button><i class='bx bxl-twitter' ></i></button>
+        <button><i class='bx bxl-facebook-circle' ></i></button>
+        <button><i class='bx bxl-instagram-alt' ></i></button>
+        <button><i class='bx bxl-linkedin-square'></i></button>
+        <button><i class='bx bxl-snapchat' ></i></button>
+        <button><i class='bx bxs-download' ></i></button>
+    </div>
+
+    <script>
+
+        const shareButton = document.querySelector('button');
+        const overlay = document.querySelector('.overlay');
+        const shareModal = document.querySelector('.share');
+
+        // const title = windoe.document.title;
+        const url = window.document.location.href;
+
+        shareButton.addEventListener('click', () => {
+            if(navigator.share) {
+                navigator.share({
+                    title: `${title}`,
+                    url: `${url}`
+                }).then(() => {
+                    console.log('Thanks for shareing!');
+                })
+                .catch(console.error);
+            } else{
+                overlay.classList.add('show-share');
+                shareModal.classList.add('show-share');
+            }
+        })
+
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('show-share');
+            shareModal.classList.remove('show-share');
+        })
+
+    </script>
+
+
+</body>
+</html>

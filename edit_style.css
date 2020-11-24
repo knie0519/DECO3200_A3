@@ -1,0 +1,15 @@
+.scan {
+    position: absolute;
+}
+
+.bar {
+    display: flex;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#icon {
+    width: 400px;
+    height: auto;
+    margin: 15px;
+}

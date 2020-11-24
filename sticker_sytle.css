@@ -1,0 +1,40 @@
+:root {
+    /* Colours */
+    --green-color: #CBDF94;
+    --red-color: #F8CFB8;
+    --background-color: #FDF8F8;
+    --yellow-color: #FCE5B2;
+    --text-color: #6A3E3E;
+    --white-color: #ffffff;
+}
+
+.bar {
+    display: flex;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#icon {
+    width: 400px;
+    height: auto;
+    margin: 15px;
+}
+
+.sticker {
+    position: absolute;
+    margin-top: 610px;
+    display: flex;
+    width: 360px;
+    text-align: center;
+}
+
+button {
+    border-radius: 15px;
+    margin: 2px;
+    background-color: var(--red-color);
+    border-color: 2px solid var(--text-color);
+}
+
+#img {
+    text-align: center;
+}
