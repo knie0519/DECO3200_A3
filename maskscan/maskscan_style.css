@@ -1,0 +1,22 @@
+.scan {
+    position: absolute;
+}
+
+.bar {
+    display: flex;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#icon {
+    width: 400px;
+    height: auto;
+    margin: 15px;
+}
+
+#icon1 {
+    opacity: 0;
+    width: 400px;
+    height: auto;
+    margin: 15px;
+}
